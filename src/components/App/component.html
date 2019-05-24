@@ -1,0 +1,16 @@
+<div id="app">
+    <h1>Hello Word</h1>
+    <img alt="Vue logo" src="../../assets/logo.png" />
+    <router-link to="/first"><el-button>First</el-button></router-link>
+    <router-link to="/two"><el-button>Two</el-button></router-link>
+    <router-link to="/thred"><el-button>Thred</el-button></router-link>
+
+    <el-table :data="list" v-loading="load">
+        <el-table-column prop="title" label="表头">
+        </el-table-column>
+        <el-table-column prop="create_at" label="发布于">
+        </el-table-column>
+        <el-table-column prop="author.loginname" label="作者">
+        </el-table-column>
+    </el-table>
+</div>
